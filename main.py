@@ -17,8 +17,8 @@ from sklearn.neighbors import NearestNeighbors
 
 
 from fastapi import FastAPI, Query
-app = FastAPI(title='Proyecto Individual 1 - Recomndacion Peliculas',
-            description='PI_ML_OPS_01',
+app = FastAPI(title='Proyecto Individual 1 - Recomendacion Peliculas',
+            description='Primera parte de los proyectos Individuales',
             version='1.0.5')
 
 df = pd.read_csv('movies_dataset_Limpio.csv',index_col=0)
