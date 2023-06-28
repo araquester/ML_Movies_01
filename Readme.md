@@ -73,28 +73,44 @@ Utilizando el servicio [Render](https://render.com/docs/free#free-web-services) 
 
 **`Creacion de una EDA`**:
 
-Hay un total de 45,466 registros (Peliculas) con 24 columnas (Caracteristicas). Muchas de estas caracteristicas tienen valores nulos como por ejemplo homepage y tagline. Intentaremos limpiar minetras al mismo tiempo se hace el analisis
+Hay un total de 45,466 registros (Peliculas) con 24 columnas (Caracteristicas). Muchas de estas caracteristicas tienen valores nulos como por ejemplo homepage y tagline. Intentaremos limpiar mientras al mismo tiempo se hace el analisis
 
-The original title refers to the title of the movie in the native language in which the movie was shot. As such, I will prefer using the translated, Anglicized name in this analysis and hence, will drop the original titles altogether. We will be able to deduce if the movie is a foreign language film by looking at the original_language feature so no tangible information is lost in doing so.
+El título original se refiere al título de la película en el idioma nativo en el que se filmó. Por lo tanto, se usara la columna title en vez de original title. Podremos deducir si la película es en otro idioma mirando la característica del idioma original, por lo que no se perderá información tangible al hacerlo.
 
-Title and Overview Wordclouds
-Are there certain words that figure more often in Movie Titles and Movie Blurbs? I suspect there are some words which are considered more potent and considered more worthy of a title. Let us find out!
+- TITLE Y OVERVIEW NUBES DE PALABRAS
+Con solo escuchar ciertas palabras podemos identificar ciertas peliculas, puede ser por los trailers o por las notas de prensa o por lo tan odiados spoilers miremos que nos dan esas nuebes de palabras por ejemplo en la columna Title
 
-![Texto alternativo](https://github.com/araquester/ML_Movies_01/blob/main/Src/Nube%20de%20palabras_titulo.jpg)
+![Nube_palabras_titulo](https://github.com/araquester/ML_Movies_01/blob/main/Src/Nube%20de%20palabras_titulo.jpg)
 
 
-The word Love is the most commonly used word in movie titles. Girl, Day and Man are also among the most commonly occuring words. I think this encapsulates the idea of the ubiquitious presence of romance in movies pretty well.
+La palabra "amor" es la palabra más comúnmente utilizada en los títulos de películas. "Chica", "día" y "hombre" también se encuentran entre las palabras más frecuentes. Creo que esto nos da una idea de la presencia del tema romance en las películas.
 
-Life is the most commonly used word in Movie titles. One and Find are also popular in Movie Blurbs. Together with Love, Man and Girl, these wordclouds give us a pretty good idea of the most popular themes present in movies.
+La palabra Life(vida) también se usa varias veces en los titulos, estas nubes de palabras nos dan una idea bastante clara que la vida y el romance son los mayores temas en las peliculas. 
 
-Original Language
-In this section, let us look at the languages of the movies in our dataset. From the production countries, we have already deduced that the majority of the movies in the dataset are English. Let us see what the other major languages represented are.
+![Nube palabras_overview](https://github.com/araquester/ML_Movies_01/blob/main/Src/nube%20de%20palabras%20overview.jpg)
 
-There are over 93 languages represented in our dataset. As we had expected, English language films form the overwhelmingly majority. French and Italian movies come at a very distant second and third respectively. Let us represent the most popular languages (apart from English) in the form of a bar plot.
+Mirando la nube de palabras de la columna overview (Resumen) se puede ver nuevamente la palabra life (Vida) así como también love, lo que nos permite sacar una conclusion clara, por otro lado tambien se ve mucho las palabras Encontrar (find), Amigo (Friend), Pelicula (Film), así como muy poco Documentales (Documentary)
 
-In this section, we will work with metrics provided to us by TMDB users. We will try to gain a deeper understanding of the popularity, vote average and vote count features and try and deduce any relationships between them as well as other numeric features such as budget and revenue.
+- COLUMNA ORIGINAL LENGUAGE
 
-The Popularity score seems to be an extremely skewed quentity with a mean of only 2.9 but maximum values reaching as high as 547, which is almost 1800% greater than the mean. However, as can be seen from the distribution plot, almost all movies have a popularity score less than 10 (the 75th percentile is at 3.678902).
+En esta sección, analicemos los idiomas de las películas en nuestro conjunto de datos. A partir de los países de producción, ya hemos deducido que la mayoría de las películas en el conjunto de datos son en inglés. Veamos cuáles son los otros idiomas principales representados.
+
+![Histograma Idiomas](https://github.com/araquester/ML_Movies_01/blob/main/Src/Histograma%20de%20idiomas%20con%20ingles.jpg)
+
+Hay más de 93 idiomas representados en nuestro conjunto de datos. Como esperábamos, las películas en inglés forman la abrumadora mayoría. Las películas francesas e italianas ocupan un lejano segundo y tercer lugar, respectivamente. Representemos los idiomas más populares (aparte del inglés) en forma de un gráfico de barras.
+
+![Histograma Idiomas sin Ingles](https://github.com/araquester/ML_Movies_01/blob/main/Src/Histograma%20de%20idiomas%20sin%20ingles.jpg)
+
+En esta sección, trabajaremos con las métricas proporcionadas por los usuarios de IMDB. Intentaremos obtener una comprensión más profunda de la popularidad, la calificación promedio y el recuento de votos, y trataremos de deducir cualquier relación entre ellos.
+
+La puntuación de popularidad parece ser una cantidad extremadamente sesgada, con una media de solo 2.9, pero valores máximos que llegan tan alto como 547, lo que es casi un 1800% mayor que la media. Sin embargo, como se puede ver en el gráfico de distribución, casi todas las películas tienen una puntuación de popularidad inferior a 10 (el percentil 75 está en 3.678902).
+
+![Histograma Popularidad](https://github.com/araquester/ML_Movies_01/blob/main/Src/Histograma%20popularidad.jpg)
+
+
+
+
+
 
 
 **`Creación de un sistema de Machine Learning`**:
