@@ -91,7 +91,7 @@ La palabra Life(vida) también se usa varias veces en los titulos, estas nubes d
 
 Mirando la nube de palabras de la columna overview (Resumen) se puede ver nuevamente la palabra life (Vida) así como también love, lo que nos permite sacar una conclusion clara, por otro lado tambien se ve mucho las palabras Encontrar (find), Amigo (Friend), Pelicula (Film), así como muy poco Documentales (Documentary)
 
-- COLUMNA ORIGINAL LENGUAGE
+- COLUMNA ORIGINAL LANGUAGE
 
 En esta sección, analicemos los idiomas de las películas en nuestro conjunto de datos. A partir de los países de producción, ya hemos deducido que la mayoría de las películas en el conjunto de datos son en inglés. Veamos cuáles son los otros idiomas principales representados.
 
@@ -108,11 +108,6 @@ La puntuación de popularidad parece ser una cantidad extremadamente sesgada, co
 ![Histograma Popularidad](https://github.com/araquester/ML_Movies_01/blob/main/Src/Histograma%20popularidad.jpg)
 
 Todo este analisis y el que se puede encontrar en [Creacion_EDA.ipynb](https://github.com/araquester/ML_Movies_01/blob/main/Creacion_EDA.ipynb) nos permite saber que las columnas que combinadas nos dan una mejor relacion de todas las peliculas serián popularity, vote_average, vote_count, genres y esas son las que utilizaremos en nuestro sistema de recomendacion.
-
-
-
-
-
 
 **`Creación de un sistema de Machine Learning`**:
 
