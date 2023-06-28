@@ -110,4 +110,4 @@ Este sistema debe ser implementado como una función adicional en la API mencion
 
 ## **Material de apoyo**
 
-- [links de ayuda](hhttps://github.com/HX-PRomero/PI_ML_OPS/raw/main/Material%20de%20apoyo.md). 
+- [links de ayuda](https://github.com/HX-PRomero/PI_ML_OPS/raw/main/Material%20de%20apoyo.md). 
