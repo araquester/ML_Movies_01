@@ -73,14 +73,15 @@ Utilizando el servicio [Render](https://render.com/docs/free#free-web-services) 
 
 **`Creacion de una EDA`**:
 
-There are a total of 45,466 movies with 24 features. Most of the features have very few NaN values (apart from homepage and tagline). We will attempt at cleaning this dataset to a form suitable for analysis in the next section.
+Hay un total de 45,466 registros (Peliculas) con 24 columnas (Caracteristicas). Muchas de estas caracteristicas tienen valores nulos como por ejemplo homepage y tagline. Intentaremos limpiar minetras al mismo tiempo se hace el analisis
 
 The original title refers to the title of the movie in the native language in which the movie was shot. As such, I will prefer using the translated, Anglicized name in this analysis and hence, will drop the original titles altogether. We will be able to deduce if the movie is a foreign language film by looking at the original_language feature so no tangible information is lost in doing so.
 
 Title and Overview Wordclouds
 Are there certain words that figure more often in Movie Titles and Movie Blurbs? I suspect there are some words which are considered more potent and considered more worthy of a title. Let us find out!
 
-![Texto alternativo](src/nube de palabras overview.jpg)
+![Texto alternativo](https://github.com/araquester/ML_Movies_01/blob/main/Src/Nube%20de%20palabras_titulo.jpg)
+
 
 The word Love is the most commonly used word in movie titles. Girl, Day and Man are also among the most commonly occuring words. I think this encapsulates the idea of the ubiquitious presence of romance in movies pretty well.
 
