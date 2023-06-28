@@ -107,6 +107,7 @@ La puntuación de popularidad parece ser una cantidad extremadamente sesgada, co
 
 ![Histograma Popularidad](https://github.com/araquester/ML_Movies_01/blob/main/Src/Histograma%20popularidad.jpg)
 
+Todo este analisis y el que se puede encontrar en [Creacion_EDA.ipynb](https://github.com/araquester/ML_Movies_01/blob/main/Creacion_EDA.ipynb) nos permite saber que las columnas que combinadas nos dan una mejor relacion de todas las peliculas serián popularity, vote_average, vote_count, genres y esas son las que utilizaremos en nuestro sistema de recomendacion.
 
 
 
