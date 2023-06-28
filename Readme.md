@@ -119,8 +119,10 @@ en el sistema de recomendación su usaron las columnas popularity, vote_average,
 
 Este sistema debe ser implementado como una función adicional en la API mencionada anteriormente y se llama: `recomendacion`.
 
-**`Video`**: A continuacion se usa un video para mostrar las caracteristicas de la API y el contenido del Repositorio que permiten que el Render este en la web [VIDEO](https://www.youtube.com/shorts/OXGfNxWNFDU)
+**`Video`**: A continuacion se usa un video para mostrar las caracteristicas de la API y el contenido del Repositorio que permiten que el Render este en la web [VIDEO](https://youtu.be/Q4SSTEJgnxU)
 
 ## **Material de apoyo**
 
-- [links de ayuda](https://github.com/HX-PRomero/PI_ML_OPS/raw/main/Material%20de%20apoyo.md). 
+- [links de ayuda](https://github.com/HX-PRomero/PI_ML_OPS/raw/main/Material%20de%20apoyo.md).
+- [Render de la Aplicacion](https://ml-movies-06.onrender.com/docs#/) 
+- [VIDEO](https://youtu.be/Q4SSTEJgnxU)
